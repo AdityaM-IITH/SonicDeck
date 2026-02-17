@@ -1,0 +1,91 @@
+/* GLOBAL STYLES */
+body {
+  background-color: #121212;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER STYLES (remove inline from App.jsx) */
+.app-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.now-playing {
+  text-align: center;
+  color: #1db954;
+  font-size: 1.5em;
+}
+
+/* GRID LAYOUT - MAKE RESPONSIVE */
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* Auto-adjusts columns */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* CARD STYLES - ADD PROFESSIONAL TOUCHES */
+.music-card {
+  background-color: #282828;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.music-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(29, 185, 84, 0.4);
+}
+
+.music-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.music-card h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.2em;
+}
+
+.music-card p {
+  color: #b3b3b3;
+  margin: 0 0 15px 0;
+}
+
+/* BUTTON CONTAINER (remove inline from MusicCard.jsx) */
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* BUTTON STYLES (remove inline from MusicCard.jsx) */
+.music-card button {
+  padding: 8px 16px;
+  background-color: #1db954;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.music-card button:hover {
+  background-color: #1ed760;
+  transform: scale(1.05);
+}
+
+.music-card button:active {
+  transform: scale(0.95);
+}
