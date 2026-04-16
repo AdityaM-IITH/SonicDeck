@@ -1,4 +1,3 @@
-
 # SonicDeck
 
 A music player application built with React featuring state management for play/pause functionality across multiple audio cards.
